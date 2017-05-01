@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+  letter-spacing: 30px;
+}
+.TextContainer {
+  font-family: monospace;
+  width: 20%;
+  margin : auto;
+}
