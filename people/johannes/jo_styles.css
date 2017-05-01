@@ -4,9 +4,10 @@
 	padding: 10px;
 	
 	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
 }
 
 h1 {
-	text-align: center;
+
 	font-size: 200%;
 }
