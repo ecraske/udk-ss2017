@@ -2,9 +2,9 @@
   font-family: "Comic Sans MS", cursive, sans-serif;
   width: 75%;
   margin : auto;
-  text-align: center;
 }
 
 h1 {
+  text-align: center;
   font-size: 200%;
 }
