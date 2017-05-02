@@ -2,8 +2,12 @@ h1 {
   text-align: center;
   letter-spacing: 30px;
 }
+.ImageContainer {
+  width: 20%;
+  margin: auto;
+}
 .TextContainer {
   font-family: monospace;
   width: 20%;
-  margin : auto;
+  margin: auto;
 }
