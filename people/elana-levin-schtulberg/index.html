@@ -5,26 +5,35 @@
 	</head>
 	<body>
 		<h1>Elana Levin Schtulberg</h1>
-		<img src="elana.jpg">
+		<img class="me" src="elana.jpg">
+		<img class="glasses1" src="glasses.png">
+		<img class="glasses2" src="glasses2.png">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum elit ac est aliquam condimentum. Vestibulum odio magna, suscipit sit amet sodales et, varius vitae ipsum. Duis fermentum at orci in eleifend. Sed a arcu a diam volutpat mollis. Aliquam ut augue nec mi molestie bibendum. Integer vestibulum nunc sit amet felis mollis iaculis. Donec eu ullamcorper metus. Suspendisse in ligula congue, eleifend urna at, consequat neque. Maecenas pharetra nibh a porttitor vulputate. Phasellus bibendum sem elementum turpis auctor eleifend. Sed eget nulla erat. Vivamus cursus pharetra arcu eget lacinia. Aenean malesuada luctus lorem quis scelerisque.</p>
 	</body>
 </html>
 
 <style type="text/css">
+
+body {
+	cursor: none;
+	overflow: hidden;
+}
  
  h1 {
- 	display: block;
- 	font-size: 2.4vw;
+ 	z-index: 10;
+ 	position: absolute;
  	width: 100%;
+    font-size: 3vw;
  	text-align: center;
  	font-family: helvetica;
+ 	padding: 0;
+ 	margin: 0;
  }
 
  img {
- 	display: block;
 	width: 24%;
     left: 38%;
-    position: relative;
+    position: absolute;
  }
  p {
  	position: absolute;
@@ -35,3 +44,26 @@
  	font-size: 0.8vw;
  }
   </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$( document ).on( "mousemove", function( event ) {
+	$('img').css('left',event.pageX).css('top',event.pageY)
+	var red = parseInt(event.pageX/$(window).width()*255);
+	var blue = parseInt(event.pageY/$(window).height()*255);
+	var font = event.pageX/$(window).width()+1;
+	var opacity1 = event.pageX/$(window).width()*1.7;
+	var opacity2 = event.pageY/$(window).height()*1.7;
+	var height = 100-(event.pageY/$(window).height())*100;
+	var size = event.pageY/$(window).height()*7+1;
+	console.log(height);
+	$('body').css('background-color',"rgb(255," + red + "," + blue + ")");
+	$('p').css('color',"rgb("+ blue + ",255," + red + ")").css("font-size",font+'vw');
+	$('h1').css('color',"rgb("+ blue + "," + red + ",255)").css("top",height+"%").css("font-size",size+"vw");
+	$('.glasses1').css('opacity',opacity1);
+	$('.glasses2').css('opacity',opacity2);
+	$('body').css('cursor','none');
+	console.log(size);
+
+
+});
+</script>
