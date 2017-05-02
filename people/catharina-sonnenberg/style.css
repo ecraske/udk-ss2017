@@ -1,4 +1,6 @@
-background-color: hsla {40,100%, 100%,50%}
+body {
+    background-color: hsla {40, 100%, 50%,1};
+}
 
 h1 {
     color: blue;
