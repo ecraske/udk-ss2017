@@ -8,9 +8,12 @@ p {
     
     font-weight: bold;
     font-family: Helvetica;
-    text-align: center;
+    text-align: left;
     line-height: 40px;
+
+}
+
+section {
+    max-width: 40em;
     
-
-
 }
