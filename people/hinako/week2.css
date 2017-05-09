@@ -1,0 +1,43 @@
+h1  {
+            font-family: "cabin sketch";
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+
+}
+
+img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width :50vw;
+            max-width: 500px;
+ }
+
+p {
+            font-family: helvetica;
+            font-size: 12px;
+            color:black;
+            text-align: center;
+}
+span{
+            color:yellow;
+}
+
+
+.blue {
+            color: blue;
+ }
+ .text{
+            max-width: 1000px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+}
+#hukidashi {
+           color: green;
+           margin-top: 50px;
+           margin-bottom: 10px;
+           text-align: center;
+           font-family: helvetica;
+ }
